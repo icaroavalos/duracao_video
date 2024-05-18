@@ -6,5 +6,6 @@ load_dotenv()
 
 video = VideoFileClip(os.getenv("caminhopasta"))
 duration = video.duration
+minuteDuration = video.duration/60
 
-print(f"Duração {duration} segundos")
+print(f"Duração {minuteDuration:.2f} minutos")
